@@ -24,11 +24,6 @@ document.getElementById('form-el').addEventListener('submit', function (event) {
 				((distanceValue * carMileage) / 100) * (gasPrice * 100)
 			let totalCost = totalTimeCost + distanceCost
 
-			// document.getElementById(
-			// 	'totalCost-el'
-			// ).textContent = `Total Trip Cost: $${
-			// 	(Math.round(totalCost) * (10 ^ 2)) / (10 ^ 2)
-			// }`
 			document.getElementById(
 				'totalCost-el'
 			).textContent = `Total Trip Cost: $${totalCost.toFixed(2)}`
