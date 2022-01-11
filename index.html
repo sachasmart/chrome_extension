@@ -1,3 +1,5 @@
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 <html>
 	<head>
 		<link
@@ -7,41 +9,43 @@
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<form id="form-el">
-			<input
-				id="destination-input"
-				placeholder="Destination - e.g., Ottawa"
-				type="text"
-			/>
-			<input
-				id="origin-input"
-				placeholder="Leaving from - e.g., Toronto"
-				type="text"
-			/>
-			<input
-				id="timeCost-input"
-				placeholder="Cost of Time ($/hr)"
-				type="text"
-			/>
-			<button>Search</button>
-		</form>
-		<section id="results">
-			<h2 id="totalCost-el"></h2>
-			<ul id="ul-el">
-				<li id="distance-li"></li>
-				<li id="gas-li"></li>
-				<li id="duration-li"></li>
-				<li id="timeCost-li"></li>
-			</ul>
-			<section id="additional">
-				<h3 id="additionalResource">
-					<a href="https://terrapass.com/product/productindividuals-families"
-						>Purchase Carbon-offsets</a
-					>
-				</h3>
+		<div class="container">
+			<form id="form-el">
+				<input
+					id="destination-input"
+					placeholder="Destination - e.g., Ottawa"
+					type="text"
+				/>
+				<input
+					id="origin-input"
+					placeholder="Leaving from - e.g., Toronto"
+					type="text"
+				/>
+				<input
+					id="timeCost-input"
+					placeholder="Cost of Time ($/hr)"
+					type="text"
+				/>
+				<button id="search-button">Search</button>
+			</form>
+			<section id="results">
+				<h2 id="totalCost-el"></h2>
+				<ul id="ul-el">
+					<li id="distance-li"></li>
+					<li id="gas-li"></li>
+					<li id="duration-li"></li>
+					<li id="timeCost-li"></li>
+				</ul>
+				<section id="additional">
+					<h3 id="additionalResource">
+						<a href="https://terrapass.com/product/productindividuals-families"
+							>Purchase Carbon-offsets</a
+						>
+					</h3>
+				</section>
 			</section>
-		</section>
 
-		<script type="module" src="index.js"></script>
+			<script type="module" src="index.js"></script>
+		</div>
 	</body>
 </html>
