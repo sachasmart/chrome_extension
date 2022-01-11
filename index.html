@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<form id="form-el">
+			<input
+				id="destination-input"
+				placeholder="Destination - e.g., Ottawa"
+				type="text"
+			/>
+			<input
+				id="origin-input"
+				placeholder="Leaving from - e.g., Toronto"
+				type="text"
+			/>
+			<input
+				id="timeCost-input"
+				placeholder="Cost of Time ($/hr)"
+				type="text"
+			/>
+			<button>Search</button>
+		</form>
+		<section id="results">
+			<h2 id="totalCost-el"></h2>
+			<ul id="ul-el">
+				<li id="distance-li"></li>
+				<li id="gas-li"></li>
+				<li id="duration-li"></li>
+				<li id="timeCost-li"></li>
+			</ul>
+			<section id="additional">
+				<h3 id="additionalResource">
+					<a href="https://terrapass.com/product/productindividuals-families"
+						>Purchase Carbon-offsets</a
+					>
+				</h3>
+			</section>
+		</section>
+
+		<script type="module" src="index.js"></script>
+	</body>
+</html>
