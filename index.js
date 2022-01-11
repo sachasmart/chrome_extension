@@ -5,7 +5,7 @@ document.getElementById('form-el').addEventListener('submit', function (event) {
 	const destinationInput = document.getElementById('destination-input').value
 	const originInput = document.getElementById('origin-input').value
 	const timeCost = document.getElementById('timeCost-input').value
-	// const apiKey = 'AIzaSyDXZu_RZuEn95Je0GiUw2K75QAaZzHxLBA'
+
 	let gasPrice = 1.39
 	let carMileage = 7 / 100
 	let urlCompose =
