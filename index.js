@@ -22,6 +22,8 @@ document.getElementById('form-el').addEventListener('submit', function (event) {
 			const distanceValue = data.rows[0].elements[0].distance.value / 1000
 			const distanceCost =
 				((distanceValue * carMileage) / 100) * (gasPrice * 100)
+			const location = data.destination_addresses[0]
+			console.log(location)
 			let totalCost = totalTimeCost + distanceCost
 
 			document.getElementById(
@@ -37,19 +39,19 @@ document.getElementById('form-el').addEventListener('submit', function (event) {
 			).textContent = `Gas:  $${distanceCost.toFixed(2)}`
 
 			document.getElementById(
-				'timeCost-li'
-			).textContent = `Cost of Time: ${timeCost}`
-
-			document.getElementById(
 				'duration-li'
 			).textContent = `Duration (min): ${totalDuration.toFixed(
 				0
 			)} minutes (${totalDurationHours.toFixed(1)} hrs)`
 
 			document.getElementById(
+				'timeCost-li'
+			).textContent = `Cost of Time: $${totalTimeCost.toFixed(2)}`
+
+			document.getElementById(
 				'additionalResource'
 			).innerHTML = `<style="border-top: 1px solid black"><a target="_blank" href="https://terrapass.com/product/productindividuals-families">Purchase Carbon-offsets for your <u>${distanceValue.toFixed(
 				0
-			)}km trip</u></style>`
+			)}km trip</u> to ${location}</style>`
 		})
 })
