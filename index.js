@@ -1,4 +1,12 @@
 import { apiKey } from './apiKey.js'
+import { geoLocateKey } from './apiKey.js'
+
+// document.getElementById('origin-input').placeholder = 'Testing'
+let geoLocateUrl = `https://www.googleapis.com/geolocation/v1/geolocate?key=${geoLocateKey}`
+
+fetch(geoLocateUrl, { method: 'POST' })
+	.then((response) => response.json())
+	.then((data) => console.log(data))
 
 document.getElementById('form-el').addEventListener('submit', function (event) {
 	event.preventDefault()
