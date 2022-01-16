@@ -1,3 +1,5 @@
+
+
 {
     "manifest_version": 3,
     "version": "1.0",
@@ -6,11 +8,19 @@
         "default_popup": "index.html",
         "default_icon": "icon.png"
     },
+    "icons" :{
+        "16": "./icon.png",
+        "32": "./icon.png",
+        "48": "./icon.png",
+        "128": "./icon.png"
+    },
     "permissions": [
         "tabs",
-        "https://maps.googleapis.com/maps/api/distancematrix/json?",
-        "https://maps.googleapis.com/maps/", 
-        "https://*/*"
+        "https://*/*",
+        "https://*/"
 
-    ]
+    ], 
+    "host_permissions": [
+    "https://*/*"
+  ]
 }
