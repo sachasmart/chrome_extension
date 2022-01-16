@@ -7,6 +7,10 @@
         "default_icon": "icon.png"
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "https://maps.googleapis.com/maps/api/distancematrix/json?",
+        "https://maps.googleapis.com/maps/", 
+        "https://*/*"
+
     ]
 }
