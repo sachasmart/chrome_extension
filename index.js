@@ -55,7 +55,7 @@ document.getElementById('form-el').addEventListener('submit', function (event) {
 
 			document.getElementById(
 				'duration-li'
-			).textContent = `Duration (min): ${totalDuration.toFixed(
+			).textContent = `Duration: ${totalDuration.toFixed(
 				0
 			)} minutes (${totalDurationHours.toFixed(1)} hrs)`
 
