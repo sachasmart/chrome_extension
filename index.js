@@ -31,8 +31,8 @@ document.getElementById('form-el').addEventListener('submit', function (event) {
 		.then((data) => {
 			console.log(data)
 
-			const totalDuration = data.rows[0].elements[0].duration.value / 60
-			const totalDurationHours = totalDuration / 60
+			let totalDuration = data.rows[0].elements[0].duration.value / 60
+			let totalDurationHours = totalDuration / 60
 			const totalTimeCost = timeCost * totalDurationHours
 			const distanceValue = data.rows[0].elements[0].distance.value / 1000
 			const distanceCost =
